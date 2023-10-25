@@ -122,3 +122,61 @@ h1 {
 .label-score {
   margin-bottom: 2rem;
 }
+
+@media screen and (max-width: 576px) {
+  .btn {
+    border: none;
+    font-size: 12px;
+    font-family: inherit;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .between {
+    font-size: 12px;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+  }
+
+  h1 {
+    font-size: 3rem;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+  }
+
+  .number {
+    font-size: 4rem;
+    width: 12rem;
+  }
+
+  .guess {
+    font-size: 3rem;
+    padding: 20px;
+    width: 15rem;
+    margin-bottom: 2rem;
+  }
+
+  .message {
+    margin-bottom: 5rem;
+    height: 2rem;
+  }
+
+  .right {
+    width: 50rem;
+    font-size: 1.3rem;
+  }
+
+  .left {
+    width: 50rem;
+  }
+
+  .label-score {
+    margin-bottom: 1.3rem;
+  }
+
+  .label-highscore {
+    font-size: 1.2rem;
+  }
+}

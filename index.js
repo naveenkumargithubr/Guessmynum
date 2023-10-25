@@ -84,12 +84,8 @@ checkEL.addEventListener("click", () => {
     // guessing number is too low
   } else if (inputVal < randomNumber) {
     // for loss the game
-    if (resscore < 1) {
-      msgEl.textContent = "Too Low";
-      resscore -= 1;
-      scoreEl.textContent = resscore;
-    } else {
-      msgEl.textContent = "You Loss The game";
-    }
+    msgEl.textContent = "Too Low";
+    resscore -= 1;
+    scoreEl.textContent = resscore;
   }
 });
