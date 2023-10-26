@@ -24,3 +24,10 @@ for (let i = 0; i < btnShowModel.length; i++)
 // add event listeners to the btns
 btnCloseModal.addEventListener("click", closeModel);
 overlay.addEventListener("click", closeModel);
+
+// the below function is used to hide the model using the esc key
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && !modal.classList.contains("hidden")) {
+    closeModel();
+  }
+});
