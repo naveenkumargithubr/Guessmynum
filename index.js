@@ -70,22 +70,32 @@ checkEL.addEventListener("click", () => {
       highscoreEl.textContent = highscore;
     }
 
-    //guessing number too high
-  } else if (inputVal > randomNumber) {
-    // for loss the game
+    // when guess is wrong
+  } else if (inputVal !== randomNumber) {
     if (resscore > 1) {
-      msgEl.textContent = "Too High";
+      msgEl.textContent = inputVal > randomNumber ? "Too High" : "Too Low";
       resscore -= 1;
       scoreEl.textContent = resscore;
     } else {
       msgEl.textContent = "You Loss The game";
     }
-
-    // guessing number is too low
-  } else if (inputVal < randomNumber) {
-    // for loss the game
-    msgEl.textContent = "Too Low";
-    resscore -= 1;
-    scoreEl.textContent = resscore;
   }
+  //guessing number too high
+  // else if (inputVal > randomNumber) {
+  //   // for loss the game
+  //   if (resscore > 1) {
+  //     msgEl.textContent = "Too High";
+  //     resscore -= 1;
+  //     scoreEl.textContent = resscore;
+  //   } else {
+  //     msgEl.textContent = "You Loss The game";
+  //   }
+
+  //   // guessing number is too low
+  // } else if (inputVal < randomNumber) {
+  //   // for loss the game
+  //   msgEl.textContent = "Too Low";
+  //   resscore -= 1;
+  //   scoreEl.textContent = resscore;
+  // }
 });
